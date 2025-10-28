@@ -1,10 +1,6 @@
-// src/pages/Index.jsx
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Benefits from "../components/Benefits";
-import ProductsSection from "../components/ProductsSection";
-import Footer from "../components/Footer";
+import { motion } from "framer-motion";
+import { useCart } from "../contexts/CartContext";
 
 // 🖼️ Product images
 import turmericImage from "../assets/turmeric-powder.jpg";
@@ -24,7 +20,9 @@ import jackfruitImage from "../assets/jackfruit-product.jpg";
 import appleImage from "../assets/apple-product.jpg";
 import bananaImage from "../assets/banana-product.jpg";
 
-const Index = () => {
+export default function Products() {
+  const { addToCart } = useCart();
+
   const spices = [
     { id: "turmeric", name: "Organic Turmeric Powder", description: "Dehydrated golden turmeric powder with curcumin. 100g package.", price: 8000, image: turmericImage },
     { id: "ginger", name: "Pure Ginger Powder", description: "Aromatic dehydrated ginger powder. 100g package.", price: 7000, image: gingerImage },
@@ -57,14 +55,57 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-amber-100">
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <ProductsSection categories={categories} />
-      <Footer />
+    <div className="pt-20 pb-24 px-4 bg-gradient-to-b from-orange-50 to-amber-100 min-h-screen">
+      <h1 className="text-3xl font-bold text-orange-800 mb-6 text-center">
+        Our Natural Products
+      </h1>
+      <p className="text-gray-700 max-w-2xl mx-auto text-center mb-10">
+        Explore our range of naturally dehydrated spices, herbs, and fruits — 
+        crafted to preserve nutrients, color, and authentic flavor using 
+        eco-friendly dehydration methods.
+      </p>
+
+      {categories.map((category) => (
+        <div key={category.title} className="mb-10">
+          <h2 className="text-2xl font-semibold text-orange-700 mb-4 border-l-4 border-orange-500 pl-3">
+            {category.title}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {category.items.map((product) => (
+              <motion.div
+                key={product.id}
+                whileHover={{ scale: 1.03 }}
+                className="bg-white rounded-xl shadow-md overflow-hidden border border-orange-100"
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-48 w-full object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {product.description}
+                  </p>
+                  <div className="flex justify-between items-center mt-3">
+                    <span className="text-orange-700 font-bold">
+                      {product.price.toLocaleString()} TZS
+                    </span>
+                    <button
+                      onClick={() => addToCart(product)}
+                      className="bg-orange-600 text-white text-sm px-3 py-1 rounded-full hover:bg-orange-700 transition"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
-};
-
-export default Index;
+}
