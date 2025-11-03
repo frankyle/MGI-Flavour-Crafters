@@ -1,7 +1,7 @@
 import React from "react";
 import { useCart } from "../contexts/CartContext";
 
-const ProductCard = ({ id, name, description, price, image }) => {
+const ProductCard = ({ id, name, description_en, description_sw, price, image }) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
@@ -10,11 +10,29 @@ const ProductCard = ({ id, name, description, price, image }) => {
 
   return (
     <div className="bg-white rounded-2xl shadow hover:shadow-lg transition p-4 flex flex-col">
-      <img src={image} alt={name} className="rounded-xl h-56 w-full object-cover mb-4" />
+      <img
+        src={image}
+        alt={name}
+        className="rounded-xl h-56 w-full object-cover mb-4"
+      />
+
       <h3 className="font-semibold text-lg text-gray-800">{name}</h3>
-      <p className="text-sm text-gray-600 flex-grow mt-2">{description}</p>
+
+      {/* Swahili Description */}
+      <p className="text-sm text-gray-800 font-medium mt-2">
+        {description_sw}
+      </p>
+
+      {/* English Description */}
+      <p className="text-xs text-gray-500 italic mt-1 flex-grow">
+        {description_en}
+      </p>
+
       <div className="flex justify-between items-center mt-4">
-        <span className="font-bold text-orange-700">{price.toLocaleString()} TZS</span>
+        <span className="font-bold text-orange-700">
+          {price.toLocaleString()} TZS
+        </span>
+
         <button
           onClick={handleAddToCart}
           className="bg-orange-600 text-white rounded-full px-4 py-2 text-sm hover:bg-orange-700 transition"
