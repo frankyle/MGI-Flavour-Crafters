@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "./Button";
-import heroImage from "../assets/hero-spices.jpg";
+import heroImage from "../assets/hero.jpg";
 
 const Hero = () => {
   return (

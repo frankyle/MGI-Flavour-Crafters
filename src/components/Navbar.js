@@ -14,9 +14,10 @@ const Navbar = () => {
       {/* 🟠 Header (Logo + Nav + Cart) */}
       <header className="fixed top-0 inset-x-0 bg-white/90 backdrop-blur-md border-b border-orange-200 flex items-center justify-between px-6 py-3 z-50 shadow-sm">
         {/* Logo */}
-        <h1 className="text-xl font-serif font-bold text-orange-700">
-          MGI Flavour Crafters
-        </h1>
+        <Link to="/" className="text-xl font-serif font-bold text-orange-700">
+        MGI Flavour Crafters
+      </Link>
+
 
         {/* Desktop Navigation (now next to Cart) */}
         <nav className="hidden md:flex items-center gap-8">
