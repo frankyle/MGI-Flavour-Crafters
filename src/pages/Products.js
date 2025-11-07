@@ -13,9 +13,11 @@ import fishMasalaImage from "../assets/FishMasala.jpg";
 
 import beetrootImage from "../assets/Beetroot.jpg";
 import moringaImage from "../assets/Moringa.jpg";
-import bamiaImage from "../assets/spinach-powder.jpg";
-import kaleImage from "../assets/kale-powder.jpg";
-import parsleyImage from "../assets/parsley-powder.jpg";
+import bamiaImage from "../assets/bamia.jpg";
+
+import UngawaLishe from "../assets/Lishe.jpg";
+import UngawaViazi from "../assets/viazi.jpg";
+import UngawaMagimbi from "../assets/magimbi.jpg";
 
 import mangoImage from "../assets/mango-product.jpg";
 import pineappleImage from "../assets/pineapple-product.jpg";
@@ -120,6 +122,41 @@ const Products = () => {
     },
   ];
 
+  
+      const flours = [
+      {
+        id: "unga-lishe-watoto",
+        name: "Unga wa Lishe wa Watoto",
+        description_sw:
+          "Unga wa lishe wa watoto wenye virutubisho kamili kwa ukuaji bora, nguvu, na afya ya mwili.",
+        description_en:
+          "Nutritious baby porridge flour made from a balanced blend of grains and legumes, ideal for healthy growth and energy.",
+        price: 13000,
+        image: UngawaLishe,
+      },
+      {
+        id: "sweet-potato-flour",
+        name: "Unga wa Sweet Potato",
+        description_sw:
+          "Unga wa viazi vitamu wenye ladha nzuri, unaofaa kwa uji, mikate, na kuongezea lishe katika vyakula mbalimbali.",
+        description_en:
+          "Naturally sweet and fiber-rich sweet potato flour, perfect for porridge, baking, and nutritious meals.",
+        price: 11000,
+        image: UngawaMagimbi,
+      },
+      {
+        id: "magimbi-flour",
+        name: "Unga wa Magimbi",
+        description_sw:
+          "Unga wa magimbi wenye wanga na virutubisho asilia, bora kwa uji, keki, au chakula cha lishe.",
+        description_en:
+          "Wholesome yam flour rich in natural starch and nutrients, great for porridge, cakes, or healthy cooking.",
+        price: 11500,
+        image: UngawaViazi,
+      },
+    ];
+  
+
   const fruits = [
     {
       id: "mango",
@@ -176,6 +213,7 @@ const Products = () => {
   const categories = [
     { title: "Premium Spices & Seasonings", items: spices },
     { title: "Nutrient-Rich Herbal Powders", items: herbs },
+     { title: "Nutritious Flours / Unga wa Lishe", items: flours },
     { title: "Tropical Dehydrated Fruits", items: fruits },
   ];
 
