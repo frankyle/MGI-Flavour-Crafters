@@ -16,7 +16,7 @@ import fishMasalaImage from "../assets/FishMasala.jpg";
 
 import beetrootImage from "../assets/Beetroot.jpg";
 import moringaImage from "../assets/Moringa.jpg";
-import spinachImage from "../assets/spinach-powder.jpg";
+import bamiaImage from "../assets/spinach-powder.jpg";
 import kaleImage from "../assets/kale-powder.jpg";
 import parsleyImage from "../assets/parsley-powder.jpg";
 
@@ -112,35 +112,17 @@ const Index = () => {
       image: moringaImage,
     },
     {
-      id: "spinach",
-      name: "Spinach Powder",
+      id: "bamia",
+      name: "Green Okra Powder",
       description_sw:
-        "Unga wa mchicha wenye madini ya chuma na vitamini, mzuri kwa supu, mchuzi na vinywaji vya afya.",
+        "Unga wa bamia wenye nyuzinyuzi nyingi, husaidia mmeng'enyo wa chakula na hutumika kwenye supu, mchuzi na vinywaji vya afya.",
       description_en:
-        "Iron-rich spinach powder ideal for soups, sauces, and nutrient-packed drinks.",
-      price: 11000,
-      image: spinachImage,
-    },
-    {
-      id: "kale",
-      name: "Kale Powder",
-      description_sw:
-        "Unga wa sukuma wiki wenye vitamini nyingi na viambato vya kuongeza uimara wa mwili.",
-      description_en:
-        "High-vitamin kale powder supporting daily nutritional balance and wellness.",
-      price: 13000,
-      image: kaleImage,
-    },
-    {
-      id: "parsley",
-      name: "Parsley Powder",
-      description_sw:
-        "Unga wa parsley wenye harufu ya kupendeza na ladha safi kwa kuongeza mwonekano na utamu wa chakula.",
-      description_en:
-        "Fresh aromatic parsley powder perfect for flavor enhancement and garnish.",
-      price: 9500,
-      image: parsleyImage,
-    },
+        "High-fiber okra powder that supports digestion, great for soups, sauces, and healthy beverages.",
+      price: 12000,
+      image: bamiaImage,
+    }
+
+    
   ];
 
   const fruits = [
