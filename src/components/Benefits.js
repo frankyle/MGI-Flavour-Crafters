@@ -5,10 +5,30 @@ import { Leaf, Award, TruckIcon, Shield } from "lucide-react";
 
 const Benefits = () => {
   const benefits = [
-    { icon: Leaf, title: "100% Natural", description: "No additives or preservatives — just nature." },
-    { icon: Award, title: "Premium Quality", description: "Processed gently to retain nutrients and flavor." },
-    { icon: TruckIcon, title: "Fast Delivery", description: "Quick, safe shipping right to your door." },
-    { icon: Shield, title: "Quality Assured", description: "Tested for purity and satisfaction guaranteed." },
+    {
+      icon: Leaf,
+      title: "100% Natural",
+      en: "No additives or preservatives — just nature.",
+      sw: "Hakuna kemikali wala vihifadhi — ni asili tupu.",
+    },
+    {
+      icon: Award,
+      title: "Premium Quality",
+      en: "Processed gently to retain nutrients and flavor.",
+      sw: "Inachakatwa kwa uangalifu ili kuhifadhi virutubisho na ladha.",
+    },
+    {
+      icon: TruckIcon,
+      title: "Fast Delivery",
+      en: "Quick, safe shipping right to your door.",
+      sw: "Uwasilishaji wa haraka na salama hadi mlangoni kwako.",
+    },
+    {
+      icon: Shield,
+      title: "Quality Assured",
+      en: "Tested for purity and satisfaction guaranteed.",
+      sw: "Imethibitishwa kwa ubora na kuridhika kunahakikishwa.",
+    },
   ];
 
   return (
@@ -25,8 +45,14 @@ const Benefits = () => {
             <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-orange-100">
               <b.icon className="w-8 h-8 text-orange-600" />
             </div>
+
             <h3 className="font-semibold text-lg text-gray-800">{b.title}</h3>
-            <p className="text-sm text-gray-600 mt-2">{b.description}</p>
+
+            {/* English */}
+            <p className="text-sm text-gray-700 font-serif mt-2">{b.en}</p>
+
+            {/* Swahili */}
+            <p className="text-sm text-gray-600 font-sans italic mt-1">{b.sw}</p>
           </motion.div>
         ))}
       </div>

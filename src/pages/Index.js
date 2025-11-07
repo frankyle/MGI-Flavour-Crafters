@@ -16,9 +16,12 @@ import fishMasalaImage from "../assets/FishMasala.jpg";
 
 import beetrootImage from "../assets/Beetroot.jpg";
 import moringaImage from "../assets/Moringa.jpg";
-import spinachImage from "../assets/spinach-powder.jpg";
-import kaleImage from "../assets/kale-powder.jpg";
-import parsleyImage from "../assets/parsley-powder.jpg";
+import bamiaImage from "../assets/bamia.jpg";
+
+import UngawaLishe from "../assets/Lishe.jpg";
+import UngawaViazi from "../assets/viazi.jpg";
+import UngawaMagimbi from "../assets/magimbi.jpg";
+
 
 import mangoImage from "../assets/mango-product.jpg";
 import pineappleImage from "../assets/pineapple-product.jpg";
@@ -112,36 +115,52 @@ const Index = () => {
       image: moringaImage,
     },
     {
-      id: "spinach",
-      name: "Spinach Powder",
+      id: "bamia",
+      name: "Green Okra Powder",
       description_sw:
-        "Unga wa mchicha wenye madini ya chuma na vitamini, mzuri kwa supu, mchuzi na vinywaji vya afya.",
+        "Unga wa bamia wenye nyuzinyuzi nyingi, husaidia mmeng'enyo wa chakula na hutumika kwenye supu, mchuzi na vinywaji vya afya.",
       description_en:
-        "Iron-rich spinach powder ideal for soups, sauces, and nutrient-packed drinks.",
-      price: 11000,
-      image: spinachImage,
-    },
+        "High-fiber okra powder that supports digestion, great for soups, sauces, and healthy beverages.",
+      price: 12000,
+      image: bamiaImage,
+    }
+
+    
+  ];
+
+    const flours = [
     {
-      id: "kale",
-      name: "Kale Powder",
+      id: "unga-lishe-watoto",
+      name: "Unga wa Lishe wa Watoto",
       description_sw:
-        "Unga wa sukuma wiki wenye vitamini nyingi na viambato vya kuongeza uimara wa mwili.",
+        "Unga wa lishe wa watoto wenye virutubisho kamili kwa ukuaji bora, nguvu, na afya ya mwili.",
       description_en:
-        "High-vitamin kale powder supporting daily nutritional balance and wellness.",
+        "Nutritious baby porridge flour made from a balanced blend of grains and legumes, ideal for healthy growth and energy.",
       price: 13000,
-      image: kaleImage,
+      image: UngawaLishe,
     },
     {
-      id: "parsley",
-      name: "Parsley Powder",
+      id: "sweet-potato-flour",
+      name: "Unga wa Sweet Potato",
       description_sw:
-        "Unga wa parsley wenye harufu ya kupendeza na ladha safi kwa kuongeza mwonekano na utamu wa chakula.",
+        "Unga wa viazi vitamu wenye ladha nzuri, unaofaa kwa uji, mikate, na kuongezea lishe katika vyakula mbalimbali.",
       description_en:
-        "Fresh aromatic parsley powder perfect for flavor enhancement and garnish.",
-      price: 9500,
-      image: parsleyImage,
+        "Naturally sweet and fiber-rich sweet potato flour, perfect for porridge, baking, and nutritious meals.",
+      price: 11000,
+      image: UngawaMagimbi,
+    },
+    {
+      id: "magimbi-flour",
+      name: "Unga wa Magimbi",
+      description_sw:
+        "Unga wa magimbi wenye wanga na virutubisho asilia, bora kwa uji, keki, au chakula cha lishe.",
+      description_en:
+        "Wholesome yam flour rich in natural starch and nutrients, great for porridge, cakes, or healthy cooking.",
+      price: 11500,
+      image: UngawaViazi,
     },
   ];
+
 
   const fruits = [
     {
@@ -199,6 +218,7 @@ const Index = () => {
   const categories = [
     { title: "Premium Spices & Seasonings", items: spices },
     { title: "Nutrient-Rich Herbal Powders", items: herbs },
+    { title: "Nutritious Flours / Unga wa Lishe", items: flours },
     { title: "Tropical Dehydrated Fruits", items: fruits },
   ];
 

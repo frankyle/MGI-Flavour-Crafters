@@ -20,12 +20,12 @@ const ProductCard = ({ id, name, description_en, description_sw, price, image })
 
       {/* Swahili Description */}
       <p className="text-sm text-gray-800 font-medium mt-2">
-        {description_sw}
+        {description_en}
       </p>
 
       {/* English Description */}
       <p className="text-xs text-gray-500 italic mt-1 flex-grow">
-        {description_en}
+        {description_sw}
       </p>
 
       <div className="flex justify-between items-center mt-4">
