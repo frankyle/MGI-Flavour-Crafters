@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "./Button";
+import { Link } from "react-router-dom";
+import Button from "./Button"; // Button is still needed for custom styling
 import heroImage from "../assets/hero.jpg";
 
 const Hero = () => {
@@ -23,13 +24,22 @@ const Hero = () => {
 
         {/* Swahili Description (Sans) */}
         <p className="text-md text-gray-600 mt-2 font-sans italic">
-          Gundua ladha na virutubisho kutoka kwa viungo bora vya kukaushwa na unga wa matunda —
+          Gundua ladha na virutubisho kutoka kwa viungo bora vya kukaushwa na unga, pamoja na Matunda —
           vikiokotwa kwa uadilifu na kuletwa vikiwa safi.
         </p>
 
         <div className="mt-8 flex gap-4">
-          <Button size="lg">Shop Now</Button>
-          <Button size="lg" variant="outline">Learn More</Button>
+          {/* Shop Now Button */}
+          <Link to="/products">
+            <Button size="lg">Shop Now</Button>
+          </Link>
+
+          {/* Learn More Button */}
+          <Link to="/about">
+            <Button size="lg" variant="outline">
+              Learn More
+            </Button>
+          </Link>
         </div>
       </motion.div>
 
