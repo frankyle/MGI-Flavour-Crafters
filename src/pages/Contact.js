@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -126,6 +127,7 @@ export default function Contact() {
           remains nutrient-rich, flavorful, and kind to the environment.
         </p>
       </div>
+    <Footer/>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Leaf, Droplet, Sun, Heart, Recycle, Award } from "lucide-react";
 import aboutImage from "../assets/hero.jpg";
+import Footer from "../components/Footer";
 
 const About = () => {
   const benefits = [
@@ -145,6 +146,8 @@ const About = () => {
           MGI Flavour Crafters — Nature’s Finest, Naturally Preserved.
         </motion.h3>
       </section>
+    <Footer/>
+
     </div>
   );
 };

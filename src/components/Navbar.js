@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React from "react";
-import { ShoppingCart, Package, Info, Phone } from "lucide-react";
+import { ShoppingCart, Package, Info, Phone, Home } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useCart } from "../contexts/CartContext";
 
@@ -13,14 +13,23 @@ const Navbar = () => {
     <>
       {/* 🟠 Header (Logo + Nav + Cart) */}
       <header className="fixed top-0 inset-x-0 bg-white/90 backdrop-blur-md border-b border-orange-200 flex items-center justify-between px-6 py-3 z-50 shadow-sm">
+        
         {/* Logo */}
         <Link to="/" className="text-xl font-serif font-bold text-orange-700">
-        MGI Flavour Crafters
-      </Link>
+          MGI Flavour Crafters
+        </Link>
 
-
-        {/* Desktop Navigation (now next to Cart) */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+          
+          <NavItem
+            to="/"
+            icon={<Home className="h-5 w-5" />}
+            label="Home"
+            active={location.pathname === "/"}
+            inline
+          />
+
           <NavItem
             to="/products"
             icon={<Package className="h-5 w-5" />}
@@ -54,7 +63,7 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        {/* Mobile Cart (kept separate) */}
+        {/* Mobile Cart */}
         <div className="md:hidden flex justify-end flex-1">
           <Link to="/cart" className="relative">
             <ShoppingCart className="h-6 w-6 text-orange-700" />
@@ -69,6 +78,14 @@ const Navbar = () => {
 
       {/* ⚪ Mobile Navigation (Bottom Nav) */}
       <nav className="fixed bottom-0 inset-x-0 bg-white border-t border-orange-200 shadow-lg flex justify-around items-center py-2 z-50 md:hidden">
+
+        <NavItem
+          to="/"
+          icon={<Home className="h-5 w-5" />}
+          label="Home"
+          active={location.pathname === "/"}
+        />
+
         <NavItem
           to="/products"
           icon={<Package className="h-5 w-5" />}
@@ -76,7 +93,7 @@ const Navbar = () => {
           active={location.pathname === "/products"}
         />
         <NavItem
-          to="/about"
+         to="/about"
           icon={<Info className="h-5 w-5" />}
           label="About"
           active={location.pathname === "/about"}

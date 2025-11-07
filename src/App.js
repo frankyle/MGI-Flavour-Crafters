@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ShippingInfo from "./components/ShippingInfo";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shipping" element={<ShippingInfo />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
