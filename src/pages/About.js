@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Leaf, Droplet, Sun, Heart, Recycle, Award } from "lucide-react";
+import aboutImage from "../assets/hero.jpg";
 
 const About = () => {
   const benefits = [
@@ -67,7 +68,7 @@ const About = () => {
       {/* Image / Mission Section */}
       <section className="container mx-auto mt-16 px-4 grid md:grid-cols-2 gap-10 items-center">
         <motion.img
-          src="/src/assets/hero-spices.jpg"
+          src={aboutImage}
           alt="Natural spices and powders"
           className="rounded-3xl shadow-lg w-full object-cover"
           initial={{ scale: 0.9, opacity: 0 }}
@@ -112,6 +113,7 @@ const About = () => {
               transition={{ delay: index * 0.1 }}
             >
               <div className="w-14 h-14 flex items-center justify-center rounded-full bg-orange-100 mb-4">
+                {/* Correct icon rendering */}
                 <b.icon className="text-orange-600 w-7 h-7" />
               </div>
               <h3 className="font-semibold text-lg text-gray-800 mb-2">{b.title}</h3>
@@ -130,8 +132,8 @@ const About = () => {
           viewport={{ once: true }}
         >
           Every spoonful of our powders, every bite of our dehydrated fruits,
-          and every pinch of spice carries the taste of **authentic nature** —
-          pure, safe, and crafted to support your daily health and flavor
+          and every pinch of spice carries the taste of **authentic nature** — 
+          pure, safe, and crafted to support your daily health and flavor 
           journey.
         </motion.p>
         <motion.h3
