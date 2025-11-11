@@ -145,7 +145,7 @@ const Products = () => {
       description_en:
         "Naturally sweet and fiber-rich sweet potato flour, perfect for porridge, baking, and nutritious meals.",
       price: 11000,
-      image: UngawaMagimbi,
+      image: UngawaViazi,
     },
     {
       id: "magimbi-flour",
@@ -155,7 +155,7 @@ const Products = () => {
       description_en:
         "Wholesome yam flour rich in natural starch and nutrients, great for porridge, cakes, or healthy cooking.",
       price: 11000,
-      image: UngawaViazi,
+      image: UngawaMagimbi,
     },
   ];
   const fruits = [
