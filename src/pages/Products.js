@@ -23,6 +23,12 @@ import pineappleImage from "../assets/pineapple.jpg";
 import jackfruitImage from "../assets/jackfruit.jpg";
 import bananaImage from "../assets/banana.jpg";
 
+// 🍵 Tea images (add your own tea images here)
+// import hibiscusTeaImage from "../assets/banana.jpg";
+// import lemongrassTeaImage from "../assets/banana.jpg";
+// import moringaTeaImage from "../assets/banana.jpg";
+// import gingerTeaImage from "../assets/banana.jpg";
+
 const Products = () => {
  const spices = [
     {
@@ -32,7 +38,7 @@ const Products = () => {
         "Unga wa manjano wa ubora wa juu wenye viini asilia vya curcumin, unaofaa kwa ladha, rangi na kuimarisha afya ya mwili.",
       description_en:
         "Premium golden turmeric powder rich in natural curcumin, perfect for seasoning, color, and wellness support.",
-      price: 6000,
+      price: 4000,
       image: turmericImage,
     },
     {
@@ -42,7 +48,7 @@ const Products = () => {
         "Unga wa tangawizi wenye harufu na joto la asili, unaofaa kwa chai, tiba mbadala na kuongeza ladha kwenye vyakula.",
       description_en:
         "Aromatic ginger powder ideal for tea, natural remedies, and enhancing flavor in meals.",
-      price: 6500,
+      price: 4000,
       image: gingerImage,
     },
     {
@@ -52,7 +58,7 @@ const Products = () => {
         "Unga wa mdalasini wa Ceylon wenye utamu wa asili na harufu nyororo, mzuri kwa vinywaji na mapishi ya kuoka.",
       description_en:
         "Smooth and naturally sweet Ceylon cinnamon perfect for beverages and baking applications.",
-      price: 7000,
+      price: 4000,
       image: cinnamonImage,
     },
     {
@@ -62,7 +68,7 @@ const Products = () => {
         "Mchanganyiko wa viungo vya asili vilivyosawazishwa kwa ladha ya pilau yenye harufu ya kuvutia na utamu wa kipekee.",
       description_en:
         "Authentic East African pilau spice blend crafted for deep aroma and rich flavor.",
-      price: 6000,
+      price: 3000,
       image: pilauMasalaImage,
     },
     {
@@ -72,7 +78,7 @@ const Products = () => {
         "Kiungo cha nyama chenye ladha ya joto na utamu wa asili, kinachoboreshwa vyema katika mapishi ya kila aina ya nyama ya ng’ombe.",
       description_en:
         "Warm and flavorful beef seasoning perfect for enhancing any beef dish.",
-      price: 6000,
+      price: 3000,
       image: beefMasalaImage,
     },
     {
@@ -82,7 +88,7 @@ const Products = () => {
         "Kiungo cha samaki chenye usawa sahihi wa viungo kwa kukaanga, kuchoma au kuandaa supu za kisasa.",
       description_en:
         "Balanced fish seasoning suitable for frying, grilling, or stew preparation.",
-      price: 6500,
+      price: 3000,
       image: fishMasalaImage,
     },
   ];
@@ -94,7 +100,7 @@ const Products = () => {
         "Unga wa beetroot wenye rangi na virutubisho vya asili, unaofaa kwa juisi, smoothies, urembo na kuongeza lishe mwilini.",
       description_en:
         "Nutrient-rich beetroot powder with natural color, ideal for smoothies, juices, and nutrition enhancement.",
-      price: 9000,
+      price: 6000,
       image: beetrootImage,
     },
     {
@@ -104,7 +110,7 @@ const Products = () => {
         "Unga wa moringa wenye manufaa mengi kiafya, unaosaidia kinga ya mwili, damu na kuongeza nguvu.",
       description_en:
         "Superfood moringa powder that supports immunity, blood health, and natural energy.",
-      price: 7000,
+      price: 6000,
       image: moringaImage,
     },
     {
@@ -114,7 +120,7 @@ const Products = () => {
         "Unga wa bamia wenye nyuzinyuzi nyingi, husaidia mmeng'enyo wa chakula na hutumika kwenye supu, mchuzi na vinywaji vya afya.",
       description_en:
         "High-fiber okra powder that supports digestion, great for soups, sauces, and healthy beverages.",
-      price: 7000,
+      price: 6000,
       image: bamiaImage,
     }
 
@@ -128,7 +134,7 @@ const Products = () => {
         "Unga wa lishe wa watoto wenye virutubisho kamili kwa ukuaji bora, nguvu, na afya ya mwili.",
       description_en:
         "Nutritious baby porridge flour made from a balanced blend of grains and legumes, ideal for healthy growth and energy.",
-      price: 12000,
+      price: 10000,
       image: UngawaLishe,
     },
     {
@@ -148,7 +154,7 @@ const Products = () => {
         "Unga wa magimbi wenye wanga na virutubisho asilia, bora kwa uji, keki, au chakula cha lishe.",
       description_en:
         "Wholesome yam flour rich in natural starch and nutrients, great for porridge, cakes, or healthy cooking.",
-      price: 11500,
+      price: 11000,
       image: UngawaViazi,
     },
   ];
@@ -191,17 +197,64 @@ const Products = () => {
         "Ndizi kavu tamu isiyo na viambata vya bandia, safi kama kitafunwa cha afya.",
       description_en:
         "Naturally sweet dehydrated banana, free from artificial additives.",
-      price: 5500,
+      price: 5000,
       image: bananaImage,
     },
   ];
 
+  //  const teaBags = [
+  //     {
+  //       id: "hibiscus-tea",
+  //       name: "Hibiscus Tea (20 Bags)",
+  //       description_sw:
+  //         "Chai ya hibiscus yenye ladha ya chachu nyororo, husaidia kushusha shinikizo la damu na kuboresha afya ya moyo.",
+  //       description_en:
+  //         "Refreshing hibiscus tea with a tangy flavor that supports heart health and blood pressure balance.",
+  //       price: 9000,
+  //       image: hibiscusTeaImage,
+  //     },
+  //     {
+  //       id: "lemongrass-tea",
+  //       name: "Lemongrass Tea (20 Bags)",
+  //       description_sw:
+  //         "Chai ya majani ya mchai chai yenye harufu ya kuvutia, inayosaidia kutuliza akili na mmeng’enyo wa chakula.",
+  //       description_en:
+  //         "Aromatic lemongrass tea known for calming effects and digestive support.",
+  //       price: 8500,
+  //       image: lemongrassTeaImage,
+  //     },
+  //     {
+  //       id: "moringa-tea",
+  //       name: "Moringa Tea (20 Bags)",
+  //       description_sw:
+  //         "Chai ya majani ya moringa yenye virutubisho vingi, bora kwa kinga ya mwili na kuongeza nguvu.",
+  //       description_en:
+  //         "Nutrient-rich moringa tea that boosts immunity and natural energy levels.",
+  //       price: 9500,
+  //       image: moringaTeaImage,
+  //     },
+  //     {
+  //       id: "ginger-tea",
+  //       name: "Ginger Tea (20 Bags)",
+  //       description_sw:
+  //         "Chai ya tangawizi yenye joto na harufu nzuri, bora kwa koo, baridi, na kuimarisha kinga ya mwili.",
+  //       description_en:
+  //         "Warming and soothing ginger tea perfect for cold relief and immune support.",
+  //       price: 9500,
+  //       image: gingerTeaImage,
+  //     },
+  //   ];
+    
   const categories = [
     { title: "Premium Spices & Seasonings", items: spices },
     { title: "Nutrient-Rich Herbal Powders", items: herbs },
-     { title: "Nutritious Flours / Unga wa Lishe", items: flours },
+    { title: "Nutritious Flours / Unga wa Lishe", items: flours },
     { title: "Tropical Dehydrated Fruits", items: fruits },
+    // { title: "Herbal & Flavored Tea Bags", items: teaBags }, // 🍵 New Category
+
   ];
+
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-amber-100">

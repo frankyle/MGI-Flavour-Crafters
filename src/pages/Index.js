@@ -22,17 +22,22 @@ import UngawaLishe from "../assets/Lishe.jpg";
 import UngawaViazi from "../assets/viazi.jpg";
 import UngawaMagimbi from "../assets/magimbi.jpg";
 
-
 import mangoImage from "../assets/mangos.jpg";
 import pineappleImage from "../assets/pineapple.jpg";
 import jackfruitImage from "../assets/jackfruit.jpg";
 import bananaImage from "../assets/banana.jpg";
 
+// 🍵 Tea images (add your own tea images here)
+// import hibiscusTeaImage from "../assets/banana.jpg";
+// import lemongrassTeaImage from "../assets/banana.jpg";
+// import moringaTeaImage from "../assets/banana.jpg";
+// import gingerTeaImage from "../assets/banana.jpg";
+
 const Index = () => {
   const spices = [
     {
       id: "turmeric",
-      name: "Turmeric Powder ( 100 g)",
+      name: "Turmeric Powder (100 g)",
       description_sw:
         "Unga wa manjano wa ubora wa juu wenye viini asilia vya curcumin, unaofaa kwa ladha, rangi na kuimarisha afya ya mwili.",
       description_en:
@@ -42,7 +47,7 @@ const Index = () => {
     },
     {
       id: "ginger",
-      name: "Ginger Powder ( 100 g)",
+      name: "Ginger Powder (100 g)",
       description_sw:
         "Unga wa tangawizi wenye harufu na joto la asili, unaofaa kwa chai, tiba mbadala na kuongeza ladha kwenye vyakula.",
       description_en:
@@ -52,7 +57,7 @@ const Index = () => {
     },
     {
       id: "cinnamon",
-      name: "Cinnamon Powder ( 100 g)",
+      name: "Cinnamon Powder (100 g)",
       description_sw:
         "Unga wa mdalasini wa Ceylon wenye utamu wa asili na harufu nyororo, mzuri kwa vinywaji na mapishi ya kuoka.",
       description_en:
@@ -62,7 +67,7 @@ const Index = () => {
     },
     {
       id: "pilau-masala",
-      name: "Pilau Masala ( 100 g)",
+      name: "Pilau Masala (100 g)",
       description_sw:
         "Mchanganyiko wa viungo vya asili vilivyosawazishwa kwa ladha ya pilau yenye harufu ya kuvutia na utamu wa kipekee.",
       description_en:
@@ -72,7 +77,7 @@ const Index = () => {
     },
     {
       id: "beef-masala",
-      name: "Beef Masala ( 100 g)",
+      name: "Beef Masala (100 g)",
       description_sw:
         "Kiungo cha nyama chenye ladha ya joto na utamu wa asili, kinachoboreshwa vyema katika mapishi ya kila aina ya nyama ya ng’ombe.",
       description_en:
@@ -82,7 +87,7 @@ const Index = () => {
     },
     {
       id: "fish-masala",
-      name: "Fish Masala ( 100 g)",
+      name: "Fish Masala (100 g)",
       description_sw:
         "Kiungo cha samaki chenye usawa sahihi wa viungo kwa kukaanga, kuchoma au kuandaa supu za kisasa.",
       description_en:
@@ -91,10 +96,11 @@ const Index = () => {
       image: fishMasalaImage,
     },
   ];
+
   const herbs = [
     {
       id: "beetroot",
-      name: "Beetroot Powder ( 100 g)",
+      name: "Beetroot Powder (100 g)",
       description_sw:
         "Unga wa beetroot wenye rangi na virutubisho vya asili, unaofaa kwa juisi, smoothies, urembo na kuongeza lishe mwilini.",
       description_en:
@@ -104,7 +110,7 @@ const Index = () => {
     },
     {
       id: "moringa",
-      name: "Moringa Powder ( 100 g)",
+      name: "Moringa Powder (100 g)",
       description_sw:
         "Unga wa moringa wenye manufaa mengi kiafya, unaosaidia kinga ya mwili, damu na kuongeza nguvu.",
       description_en:
@@ -114,18 +120,17 @@ const Index = () => {
     },
     {
       id: "bamia",
-      name: "Green Okra Powder ( 100 g)",
+      name: "Green Okra Powder (100 g)",
       description_sw:
         "Unga wa bamia wenye nyuzinyuzi nyingi, husaidia mmeng'enyo wa chakula na hutumika kwenye supu, mchuzi na vinywaji vya afya.",
       description_en:
         "High-fiber okra powder that supports digestion, great for soups, sauces, and healthy beverages.",
       price: 7000,
       image: bamiaImage,
-    }
-
-    
+    },
   ];
-    const flours = [
+
+  const flours = [
     {
       id: "unga-lishe-watoto",
       name: "Unga wa Lishe wa Watoto (1 Kg)",
@@ -138,13 +143,13 @@ const Index = () => {
     },
     {
       id: "sweet-potato-flour",
-      name: "Unga wa Sweet Potato (1 Kg)",
+      name: "Unga wa Viazi Vitamu (1 Kg)",
       description_sw:
         "Unga wa viazi vitamu wenye ladha nzuri, unaofaa kwa uji, mikate, na kuongezea lishe katika vyakula mbalimbali.",
       description_en:
         "Naturally sweet and fiber-rich sweet potato flour, perfect for porridge, baking, and nutritious meals.",
       price: 11000,
-      image: UngawaMagimbi,
+      image: UngawaViazi,
     },
     {
       id: "magimbi-flour",
@@ -154,13 +159,14 @@ const Index = () => {
       description_en:
         "Wholesome yam flour rich in natural starch and nutrients, great for porridge, cakes, or healthy cooking.",
       price: 11500,
-      image: UngawaViazi,
+      image: UngawaMagimbi,
     },
   ];
+
   const fruits = [
     {
       id: "mango",
-      name: "Dehydrated Mango ( 200 g)",
+      name: "Dehydrated Mango (200 g)",
       description_sw:
         "Vipande au unga wa embe wenye utamu wa asili usioongezwa sukari.",
       description_en:
@@ -170,7 +176,7 @@ const Index = () => {
     },
     {
       id: "pineapple",
-      name: "Dehydrated Pineapple ( 200 g)",
+      name: "Dehydrated Pineapple (200 g)",
       description_sw:
         "Nanasi kavu lenye chachu nyororo na utamu wa asili, linafaa kama snack au kuongeza ladha.",
       description_en:
@@ -180,7 +186,7 @@ const Index = () => {
     },
     {
       id: "jackfruit",
-      name: "Dehydrated Jackfruit ( 200 g)",
+      name: "Dehydrated Jackfruit (200 g)",
       description_sw:
         "Fenesi kavu lenye utamu wa asili na uwezo wa kutumiwa kama snack au unga.",
       description_en:
@@ -188,10 +194,9 @@ const Index = () => {
       price: 7000,
       image: jackfruitImage,
     },
-   
     {
       id: "banana",
-      name: "Dehydrated Banana ( 200 g)",
+      name: "Dehydrated Banana (200 g)",
       description_sw:
         "Ndizi kavu tamu isiyo na viambata vya bandia, safi kama kitafunwa cha afya.",
       description_en:
@@ -201,19 +206,64 @@ const Index = () => {
     },
   ];
 
+  // 🍵 New Category: Herbal & Flavored Tea Bags
+  // const teaBags = [
+  //   {
+  //     id: "hibiscus-tea",
+  //     name: "Hibiscus Tea (20 Bags)",
+  //     description_sw:
+  //       "Chai ya hibiscus yenye ladha ya chachu nyororo, husaidia kushusha shinikizo la damu na kuboresha afya ya moyo.",
+  //     description_en:
+  //       "Refreshing hibiscus tea with a tangy flavor that supports heart health and blood pressure balance.",
+  //     price: 9000,
+  //     image: hibiscusTeaImage,
+  //   },
+  //   {
+  //     id: "lemongrass-tea",
+  //     name: "Lemongrass Tea (20 Bags)",
+  //     description_sw:
+  //       "Chai ya majani ya mchai chai yenye harufu ya kuvutia, inayosaidia kutuliza akili na mmeng’enyo wa chakula.",
+  //     description_en:
+  //       "Aromatic lemongrass tea known for calming effects and digestive support.",
+  //     price: 8500,
+  //     image: lemongrassTeaImage,
+  //   },
+  //   {
+  //     id: "moringa-tea",
+  //     name: "Moringa Tea (20 Bags)",
+  //     description_sw:
+  //       "Chai ya majani ya moringa yenye virutubisho vingi, bora kwa kinga ya mwili na kuongeza nguvu.",
+  //     description_en:
+  //       "Nutrient-rich moringa tea that boosts immunity and natural energy levels.",
+  //     price: 9500,
+  //     image: moringaTeaImage,
+  //   },
+  //   {
+  //     id: "ginger-tea",
+  //     name: "Ginger Tea (20 Bags)",
+  //     description_sw:
+  //       "Chai ya tangawizi yenye joto na harufu nzuri, bora kwa koo, baridi, na kuimarisha kinga ya mwili.",
+  //     description_en:
+  //       "Warming and soothing ginger tea perfect for cold relief and immune support.",
+  //     price: 9500,
+  //     image: gingerTeaImage,
+  //   },
+  // ];
+
   const categories = [
     { title: "Premium Spices & Seasonings", items: spices },
     { title: "Nutrient-Rich Herbal Powders", items: herbs },
     { title: "Nutritious Flours / Unga wa Lishe", items: flours },
     { title: "Tropical Dehydrated Fruits", items: fruits },
+    // { title: "Herbal & Flavored Tea Bags", items: teaBags }, // 🍵 New Category
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-amber-100">
       <Navbar />
       <Hero />
-      <Benefits />
       <ProductsSection categories={categories} />
+      <Benefits />
       <Footer />
     </div>
   );
