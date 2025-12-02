@@ -128,7 +128,7 @@ const Index = () => {
         "Unga wa beetroot wenye rangi na virutubisho vya asili, unaofaa kwa juisi, smoothies, urembo na kuongeza lishe mwilini.",
       description_en:
         "Nutrient-rich beetroot powder with natural color, ideal for smoothies, juices, and nutrition enhancement.",
-      price: 6000,
+      price: 7000,
       image: beetrootImage,
     },
     {
@@ -138,7 +138,7 @@ const Index = () => {
         "Unga wa moringa wenye manufaa mengi kiafya, unaosaidia kinga ya mwili, damu na kuongeza nguvu.",
       description_en:
         "Superfood moringa powder that supports immunity, blood health, and natural energy.",
-      price: 6000,
+      price: 5000,
       image: moringaImage,
     },
     {
@@ -148,7 +148,7 @@ const Index = () => {
         "Unga wa bamia wenye nyuzinyuzi nyingi, husaidia mmeng'enyo wa chakula na hutumika kwenye supu, mchuzi na vinywaji vya afya.",
       description_en:
         "High-fiber okra powder that supports digestion, great for soups, sauces, and healthy beverages.",
-      price: 6000,
+      price: 5000,
       image: bamiaImage,
     }
 
